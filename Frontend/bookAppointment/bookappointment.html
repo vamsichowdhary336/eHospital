@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="bookappointment.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Book New Appointment</h2>
+
+    <!-- Department -->
+    <select id="department" name="department" onchange="filterDoctors()" required>
+        <option value="">Select Department</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="General">General</option>
+    </select>
+
+    
+     <!-- Doctor -->
+<select id="doctor" name="doctor" onchange="loadTimeSlots()" required>
+    <option value="">Select Doctor</option>
+</select>
+
+<!-- Date -->
+<input type="date" id="appointmentDate" name="appointmentDate" required />
+
+
+<!-- Time -->
+<select id="appointmentTime" name="appointmentTime" required>
+    <option value="">Select Time</option>
+</select>
+
+  <input type="text" id="patientName" placeholder="Patient Name" required />
+<input type="email" id="patientEmail" placeholder="Patient Email" required />
+
+    <button onclick="bookAppointment()">Submit</button>
+
+    <p id="message"></p>
+</div>
+
+<script src="bookappointment.js"></script>
+
+<script>
+    // Disable past dates
+    const dateInput = document.getElementById("appointmentDate");
+    const today = new Date().toISOString().split("T")[0];
+    dateInput.min = today;
+</script>
+
+</body>
+</html>

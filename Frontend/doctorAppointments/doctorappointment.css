@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e6f0ff, #f3f8ff);
+}
+
+/* Wrapper */
+.page-wrapper {
+    padding: 40px;
+}
+
+/* Card container */
+.container {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Title */
+.page-title {
+    text-align: center;
+    color: #2d6cdf;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* Table */
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.appointments-table thead {
+    background: #2d6cdf;
+    color: white;
+}
+
+.appointments-table th,
+.appointments-table td {
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.appointments-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.appointments-table tbody tr:hover {
+    background: #f6f9ff;
+}
+
+/* Actions column */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons base */
+.action-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Upload Report (blue) */
+.action-btn.primary {
+    background: #2d6cdf;
+    color: white;
+    box-shadow: 0 6px 14px rgba(45,108,223,0.3);
+}
+
+.action-btn.primary:hover {
+    background: #1f4fbf;
+}
+
+/* Deny (red) */
+.action-btn.danger {
+    background: #e53935;
+    color: white;
+    box-shadow: 0 6px 14px rgba(229,57,53,0.3);
+}
+
+.action-btn.danger:hover {
+    background: #c62828;
+}
+
+/* Status text */
+.appointment-status {
+    font-weight: 600;
+    color: #444;
+}

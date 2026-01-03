@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e6f0ff, #f3f8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.dashboard-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card (same as login page) */
+.dashboard-card {
+    background: #ffffff;
+    width: 460px;
+    padding: 45px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Headings */
+.heading {
+    font-size: 30px;
+    color: #2d6cdf; /* 🔵 blue like login */
+    margin-bottom: 8px;
+}
+
+.subheading {
+    font-size: 15px;
+    color: #6c7a89;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+.action-btn {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Blue buttons (same as Login button) */
+.primary {
+    background: #2d6cdf;
+}
+
+.primary:hover {
+    background: #245bcc;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Logout button */
+.danger {
+    background: #f44336;
+}
+
+.danger:hover {
+    background: #d9372d;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Remove extra margin */
+.action-btn:last-child {
+    margin-bottom: 0;
+}

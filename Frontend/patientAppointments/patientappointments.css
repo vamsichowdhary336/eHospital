@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f6ff;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #1e60d4;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #1e60d4;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ===== ACTION BUTTONS (FANCY) ===== */
+td:last-child {
+    /* display: flex;
+    justify-content: center; */
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 20px;              /* pill shape */
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.25s ease;
+}
+
+/* Reschedule button */
+.reschedule {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.reschedule:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(37,99,235,0.4);
+}
+
+/* Cancel button */
+.cancel {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.cancel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(220,38,38,0.4);
+}
+
+/* Optional: disable state */
+.action-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}

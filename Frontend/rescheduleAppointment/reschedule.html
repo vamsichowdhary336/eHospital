@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reschedule Appointment</title>
+    <link rel="stylesheet" href="reschedule.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Reschedule Appointment</h2>
+
+    <!-- Department (read-only) -->
+    <input type="text" id="department" disabled />
+
+    <!-- Doctor (read-only) -->
+    <input type="text" id="doctor" disabled />
+
+    <!-- Date (editable) -->
+    <input type="date" id="appointmentDate" required />
+
+    <!-- Time (editable) -->
+    <select id="appointmentTime" required>
+        <option value="">Select Time</option>
+    </select>
+
+    <!-- Patient Name (read-only) -->
+    <input type="text" id="patientName" disabled />
+
+    <!-- Patient Email (read-only) -->
+    <input type="email" id="patientEmail" disabled />
+
+    <button onclick="rescheduleAppointment()">Update Appointment</button>
+
+    <p id="message"></p>
+</div>
+
+<script src="reschedule.js"></script>
+
+<script>
+    // Disable past dates
+    const dateInput = document.getElementById("appointmentDate");
+    const today = new Date().toISOString().split("T")[0];
+    dateInput.min = today;
+</script>
+
+</body>
+</html>

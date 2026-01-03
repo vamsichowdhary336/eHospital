@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Appointments</title>
+    <link rel="stylesheet" href="doctorappointment.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="container">
+        <h2 class="page-title">Doctor Appointments</h2>
+
+        <table class="appointments-table">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Appointment Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="appointmentsTable">
+                <!-- Sample row (JS will clone this structure) -->
+                <tr>
+                    <td class="patient-name"></td>
+                    <td class="appointment-date"></td>
+                    <td class="appointment-time"></td>
+                    <td class="appointment-status"></td>
+                    <td class="actions">
+                        <button class="action-btn primary upload-btn">
+                            Upload Report
+                        </button>
+
+                        <button class="action-btn danger deny-btn">
+                            Deny
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="doctorappointment.js"></script>
+</body>
+</html>

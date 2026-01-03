@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctordashboard.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="dashboard-card">
+
+       <h1 class="heading">Welcome, <span id="username">Doctor</span>!</h1>
+
+        <button class="action-btn primary" onclick="viewAppointments()">View Appointments</button>
+<button class="action-btn primary" onclick="viewReports()">View Reports</button>
+    </div>
+
+    <div class="logout-card">
+        <button class="action-btn danger" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script src="doctordashboard.js"></script>
+</body>
+</html>

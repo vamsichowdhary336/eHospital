@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="patientdashboard.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="dashboard-card">
+
+        <h1 class="heading" id="welcomeText"></h1>
+        <p class="subheading">Patient Dashboard</p>
+
+        <button class="action-btn primary" onclick="goToAppointments()">View Appointments</button>
+        <button class="action-btn primary" onclick="goToBookAppointment()">Book Appointment</button>
+        <button class="action-btn primary" onclick="viewReports()">View Reports</button>
+
+        <button class="action-btn danger" onclick="logout()">Logout</button>
+
+    </div>
+</div>
+<script src="patientdashboard.js"></script>
+</body>
+</html>
